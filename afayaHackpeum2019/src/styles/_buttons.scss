@@ -1,8 +1,8 @@
 @import "../styles/variables";
 @import "../styles/backgrounds";
 
-.menuButtons{
-    background-color: $color-background-transparent;
+.homeButton {
+    background-color: $color-background-secondary;
     border: 1px;
     border-style: solid;
     border-radius: $border-radius-size;
@@ -15,8 +15,8 @@
     cursor: pointer;
   }
   
-.menuButtons:hover{
-      background: $color-secondary-white;
+.homeButton:hover{
+      background: $color-background-primary;
       text-decoration: none;
       text-align: center;
       color: $color-dark;
