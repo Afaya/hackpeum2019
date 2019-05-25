@@ -9,12 +9,19 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ResultsComponent implements OnInit {
   puntuation = +this.route.snapshot.paramMap.get('puntuation');
   exitButtonTitle = 'Exit';
-  puntuationtext: string;
+  puntuationText: string;
+  recommendationText: string;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.puntuationtext = 'Tu puntuación final es de ' + this.puntuation + ' puntos.';
+    if(this.puntuation < 30) {
+      this.puntuationText = 'Sigues siendo un Padawan. Has obtenido ' + this.puntuation + ' puntos.';
+      this.recommendationText = 'Te recomendamos que dejes de jugar con la espada láser y te dediques a concentrarte en la fuerza';
+    } else {
+      this.puntuationText = 'Enhorabuena, eres todo un Jedi. Has obtenido '+ this.puntuation + ' puntos.';
+      this.recommendationText = 'Que la fuerza te acompañe';
+    }
   }
 
   goHome(): void {
