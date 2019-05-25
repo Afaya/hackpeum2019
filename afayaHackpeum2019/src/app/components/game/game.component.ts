@@ -64,24 +64,24 @@ export class GameComponent implements OnInit {
   }
 
   nextFilm(): void {
-    this.filmAnswer = '';
-    this.answerPlaceHolder = 'Introducir titulo de la pelicula';
-    this.pointsNumber = 10;
-    this.actualCueNumber = 1;
-    this.cueList = Array<string>();
-    this.selectFilm();
-    this.cueShowing();
+    if (this.actualFilmIndex < this.filmList.length) {
+      this.filmAnswer = '';
+      this.answerPlaceHolder = 'Introducir titulo de la pelicula';
+      this.pointsNumber = 10;
+      this.actualCueNumber = 1;
+      this.cueList = Array<string>();
+      this.selectFilm();
+      this.cueShowing();
+    }
   }
 
   checkAnswer(): void {
     if (typeof (this.filmAnswer) !== 'undefined' && this.filmAnswer !== ''
       && this.filmAnswer.toLowerCase() === this.actualFilm.titulo.toLowerCase()) {
       this.actualTotalPoints += this.pointsNumber;
-      if (this.actualFilmIndex < this.filmList.length) {
-        this.nextFilm();
-      }
+      this.nextFilm();
     } else {
-      if (this.actualCueNumber > 3 && this.actualFilmIndex < this.filmList.length) {
+      if (this.actualCueNumber > 3) {
         this.nextFilm();
       } else {
         this.filmAnswer = '';
