@@ -3,7 +3,7 @@
     <button class="exitButton">
       {{exitButtonTitle}}
     </button>
-    <input readonly [(value)]="pointsNumber">
+    <input readonly [value]="pointsNumber">
   </div>
   <div class="gameCuesContainer">
     <ul>
@@ -13,16 +13,16 @@
     </ul>
   </div>
   <div class="gameOptionsContainer">
-    <input placeholder="{{answerPlaceHolder}}" (value)="filmAnswer">
-    <button class="sendAnswerButton">
+    <input placeholder="{{answerPlaceHolder}}" [value]="filmAnswer" (change)="filmAnswer = $event.target.value">
+    <button class="sendAnswerButton" (click)="checkAnswer()">
       {{sendButtonTitle}}
     </button>
   </div>
   <div class="gameOptionsContainer">
-    <button class="nextCueButton">
+    <button class="nextCueButton" (click)="cueShowing()" [disabled]="actualCueNumber > 3">
       {{nextCueButtonTitle}}
     </button>
-    <button class="nextFilmButton">
+    <button class="nextFilmButton" (click)="nextFilm()" [disabled]="actualCueNumber < 4">
       {{nextFilmButtonTitle}}
     </button>
   </div>

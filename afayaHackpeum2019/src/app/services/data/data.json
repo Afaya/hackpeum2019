@@ -1,146 +1,144 @@
-
-{"data": 
-    [
-    {
-    "titulo":"Dogville",
-    "pista1": "Película de 2003 dirigida por Lars von Trier",
-    "pista2": "Protagonizada por Nicole Kidman",
-    "pista3": "Parábola que cuenta la historia de Grace Mulligan, una mujer que se esconde de los gánsteres y que llega a una pequeña ciudad de montaña",
-    "categoria":2
-    },
-    {
-    "titulo":"La bicicleta verde",
-    "pista1":"Película dramática saudí de 2012",
-    "pista2":"Fue el primer largometraje filmado enteramente en Arabia Saudita y el primer largometraje realizado por una directora saudita.",
-    "pista3":"Wadjda, una muchacha saudita de 11 años que vive en la ciudad capital de Riad, sueña con poseer una bicicleta verde",
-    "categoria":2
-    },
-    {
-    "titulo":" Der Bunker",
-    "pista1":"Película alemana de 2015",
-    "pista2": "Dirigida por Nikias Chryssos y protagonizada por Pit Bukowski",
-    "pista3":"Un joven estudiante busca tranquilidad y aislamiento para centrarse en un importante trabajo, pero acaba como profesor de un peculiar niño que es educado en casa por sus padres, aislado del exterior en una mansión-búnker.",
-    "categoria":2
-    },
-    {
-    "titulo":"Mulholland Drive",
-    "pista1":"Dirigida por David Lynch y protagonizada por Naomi Watts",
-    "pista2":"Ganadora del premio Mejor Director en el Festival de Cannes de 2001", 
-    "pista3":"Betty Elms, una joven aspirante a actriz, llega a Los Ángeles para convertirse en estrella de cine y se aloja en el apartamento de su tía. Allí conoce a la enigmática Rita (Laura Harring), una mujer que padece amnesia a causa de un accidente sufrido en Mulholland Drive.",
-    "categoria":2
-    }
-    ,
-    {
-    "titulo":"12 hombres sin piedad",
-    "pista1":"Dirigida por Sidney Lumet",
-    "pista2":"Actúa Henry Fonda",
-    "pista3":"Un jurado debe decidir sobre la culpabilidad o inocencia de un sujeto.",
-    "categoria":2
-    },
-    {
-    "titulo":"2001: Una odisea en el espacio",
-    "pista1":"Dirigida por Stanley Kubrik",
-    "pista2":"Estrenada el 3 de abril de 1968",
-    "pista3": "Marcó un hito por su estilo de comunicación visual, sus revolucionarios efectos especiales, su realismo científico y sus proyecciones vanguardistas",
-    "categoria":2
-    },
-    {
-    "titulo":"Fellini, ocho y medio",
-    "pista1":"Sueño-realidad italiano",
-    "pista2":"Federico Fellini, 1963",
-    "pista3":"Recuerdos, diablos y amores a partir de los cuales un director de cine italiano busca inspiración para su nueva película. Y lo hace lanzando una trampa al espectador, que se queda deambulando en un universo surrealista, introspectivo y real al mismo tiempo.",
-    "categoria":2
-    },
-    {
-    "titulo": "Rashomon",
-    "pista1": "Akira Kurosawa, 1950",
-    "pista2": "Basada en un cuento escrito por Ryūnosuke Akutagawa en 1915",
-    "pista3": "Un leñador, un sacerdote budista y un peregrino tendrán que juzgar a un bandido según una serie de testimonios, generando un dilema que da sentido al endiosamiento de esta película de culto. ",
-    "categoria":2
-    },
-    {
-    "titulo": "Tu madre se ha comido a mi perro",
-    "pista1": "Nueva Zelanda, 1991",
-    "pista2": "Dirigida por Peter Jackson",
-    "pista3": "En los años 50, una expedición científica descubre un ratticus. Confinado el ejemplar en una jaula del zoológico, el animal escapará pasado un tiempo y morderá a la madre de Lionel.",
-    "categoria":2
-    },
-    {
-    "titulo":"Jesucristo cazavampiros",
-    "pista1": "Dirigida por Lee Demarbre",
-    "pista2": "Vampiros y artes marciales",
-    "pista3": "El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión, antes de juzgar a la Humanidad por sus pecados.",
-    "categoria":2
-    },
-    {
-    "titulo":"¡Canta!",
-    "pista1": "Protagonizada por Buster Moon y Rosita",
-    "pista2": "En un mundo como el nuestro, pero poblado por animales, Buster Moon es un optimista koala",
-    "pista3": "Llena de grandes actuaciones musicales",
-    "categoria":1
-    },
-    {
-    "titulo": "Hotel Transylvania",
-    "pista1": "En esta película Mavis cumple 118 años",
-    "pista2": "Jonathan aparece de improvista y altera a Mavis y su padre",
-    "pista3": "Un hotel cinco estrellas, con el fin de que los monstruos del mundo puedan estar a salvo de la civilización humana.",
-    "categoria":1
-    },
-    {
-    "titulo": "Del revés",
-    "pista1": "Riley Anderson, una niña de once años que debe mudarse con sus padres de su hogar en Minnesota a San Francisco",
-    "pista2": "Alegría y Tristeza se encuentran con el amigo imaginario de Riley Bing Bong",
-    "pista3": "la película se convierte en una carrera para evitar que esas memorias principales sean eliminadas",
-    "categoria":1
-    },
-    {
-    "titulo":"Up",
-    "pista1": "Carl Fredricksen, un niño tímido y serio que idolatra al famoso explorador Charles F. Muntz Jr, cuyas anécdotas suelen relatarse en unos informativos proyectados en las salas de cine de la época",
-    "pista2": "Carl conoce a una niña enérgica y algo excéntrica llamada Ellie, de la que se enamora",
-    "pista3": "Un viejo gruñón y un niño con muchos globos emprenden un largo viaje",
-    "categoria":1
-    },
-    {
-    "titulo": "Tiana y el sapo",
-    "pista1": "Al inicio dos niñas pequeñas están escuchando la historía del príncipe rana",
-    "pista2": "La protagonista sueña con crear su propio restaurante",
-    "pista3": "Los protagonistas se llaman Naveen y Tiana",
-    "categoria":1
-    },
-    {
-    "titulo": "Evasión en la granja",
-    "pista1": "Los protagonistas son Ginger y Rocky",
-    "pista2": "Ginger es una gallina intrépida, valiente y decidida que vive en una granja muy parecida a un campamento de prisioneros de la Segunda Guerra Mundial ",
-    "pista3": "Ginger y Rocky consiguen escapar de los señores Tweedy en avión",
-    "categoria":1
-    },
-    {
-    "titulo": "Dumbo",
-    "pista1": "La película comienza cuando las cigüeñas traen varios animales bebés a los animales del circo",
-    "pista2": "Nuestro protagonista es alejado de su madre",
-    "pista3": "Gracias a sus grandes orejas el elefante consigue volar",
-    "categoria":1
-    },
-    {
-    "titulo": "Harry Potter y el prisionero de Azkaban",
-    "pista1": "Forma parte de una saga de películas",
-    "pista2": "Nuestro protagonista conoce a su padrino en esta película",
-    "pista3": "Sirius fue condenado por la muerte de varios muggles",
-    "categoria":1
-    },
-    {
-    "titulo": "Star wars: El despertar de la fuerza",
-    "pista1": "Séptima película de una famosa saga",
-    "pista2": "Treinta años después de la Batalla de Endor, la Galaxia no ha podido acabar con la tiranía y la opresión.",
-    "pista3": "Sólo Rey puede hacerle sombra a Kylo Ren",
-    "categoria":1
-    },
-    {
-    "titulo": "Shrek",
-    "pista1": "Nuestro protagonista conoce a una princesa muy peculiar",
-    "pista2": "Cuando Burro trata de distraer a la dragona, esta se enamora de él",
-    "pista3": "El protagonista es un ogro verde que tiene su cabaña en un pantano",
-    "categoria":1
-    }
+{
+    "data": [
+        {
+            "titulo": "Dogville",
+            "pista1": "Película de 2003 dirigida por Lars von Trier",
+            "pista2": "Protagonizada por Nicole Kidman",
+            "pista3": "Parábola que cuenta la historia de Grace Mulligan, una mujer que se esconde de los gánsteres y que llega a una pequeña ciudad de montaña",
+            "categoria": 2
+        },
+        {
+            "titulo": "La bicicleta verde",
+            "pista1": "Película dramática saudí de 2012",
+            "pista2": "Fue el primer largometraje filmado enteramente en Arabia Saudita y el primer largometraje realizado por una directora saudita.",
+            "pista3": "Wadjda, una muchacha saudita de 11 años que vive en la ciudad capital de Riad, sueña con poseer una bicicleta verde",
+            "categoria": 2
+        },
+        {
+            "titulo": " Der Bunker",
+            "pista1": "Película alemana de 2015",
+            "pista2": "Dirigida por Nikias Chryssos y protagonizada por Pit Bukowski",
+            "pista3": "Un joven estudiante busca tranquilidad y aislamiento para centrarse en un importante trabajo, pero acaba como profesor de un peculiar niño que es educado en casa por sus padres, aislado del exterior en una mansión-búnker.",
+            "categoria": 2
+        },
+        {
+            "titulo": "Mulholland Drive",
+            "pista1": "Dirigida por David Lynch y protagonizada por Naomi Watts",
+            "pista2": "Ganadora del premio Mejor Director en el Festival de Cannes de 2001",
+            "pista3": "Betty Elms, una joven aspirante a actriz, llega a Los Ángeles para convertirse en estrella de cine y se aloja en el apartamento de su tía. Allí conoce a la enigmática Rita (Laura Harring), una mujer que padece amnesia a causa de un accidente sufrido en Mulholland Drive.",
+            "categoria": 2
+        },
+        {
+            "titulo": "12 hombres sin piedad",
+            "pista1": "Dirigida por Sidney Lumet",
+            "pista2": "Actúa Henry Fonda",
+            "pista3": "Un jurado debe decidir sobre la culpabilidad o inocencia de un sujeto.",
+            "categoria": 2
+        },
+        {
+            "titulo": "2001: Una odisea en el espacio",
+            "pista1": "Dirigida por Stanley Kubrik",
+            "pista2": "Estrenada el 3 de abril de 1968",
+            "pista3": "Marcó un hito por su estilo de comunicación visual, sus revolucionarios efectos especiales, su realismo científico y sus proyecciones vanguardistas",
+            "categoria": 2
+        },
+        {
+            "titulo": "Fellini, ocho y medio",
+            "pista1": "Sueño-realidad italiano",
+            "pista2": "Federico Fellini, 1963",
+            "pista3": "Recuerdos, diablos y amores a partir de los cuales un director de cine italiano busca inspiración para su nueva película. Y lo hace lanzando una trampa al espectador, que se queda deambulando en un universo surrealista, introspectivo y real al mismo tiempo.",
+            "categoria": 2
+        },
+        {
+            "titulo": "Rashomon",
+            "pista1": "Akira Kurosawa, 1950",
+            "pista2": "Basada en un cuento escrito por Ryūnosuke Akutagawa en 1915",
+            "pista3": "Un leñador, un sacerdote budista y un peregrino tendrán que juzgar a un bandido según una serie de testimonios, generando un dilema que da sentido al endiosamiento de esta película de culto. ",
+            "categoria": 2
+        },
+        {
+            "titulo": "Tu madre se ha comido a mi perro",
+            "pista1": "Nueva Zelanda, 1991",
+            "pista2": "Dirigida por Peter Jackson",
+            "pista3": "En los años 50, una expedición científica descubre un ratticus. Confinado el ejemplar en una jaula del zoológico, el animal escapará pasado un tiempo y morderá a la madre de Lionel.",
+            "categoria": 2
+        },
+        {
+            "titulo": "Jesucristo cazavampiros",
+            "pista1": "Dirigida por Lee Demarbre",
+            "pista2": "Vampiros y artes marciales",
+            "pista3": "El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión, antes de juzgar a la Humanidad por sus pecados.",
+            "categoria": 2
+        },
+        {
+            "titulo": "¡Canta!",
+            "pista1": "Protagonizada por Buster Moon y Rosita",
+            "pista2": "En un mundo como el nuestro, pero poblado por animales, Buster Moon es un optimista koala",
+            "pista3": "Llena de grandes actuaciones musicales",
+            "categoria": 1
+        },
+        {
+            "titulo": "Hotel Transylvania",
+            "pista1": "En esta película Mavis cumple 118 años",
+            "pista2": "Jonathan aparece de improvista y altera a Mavis y su padre",
+            "pista3": "Un hotel cinco estrellas, con el fin de que los monstruos del mundo puedan estar a salvo de la civilización humana.",
+            "categoria": 1
+        },
+        {
+            "titulo": "Del revés",
+            "pista1": "Riley Anderson, una niña de once años que debe mudarse con sus padres de su hogar en Minnesota a San Francisco",
+            "pista2": "Alegría y Tristeza se encuentran con el amigo imaginario de Riley Bing Bong",
+            "pista3": "la película se convierte en una carrera para evitar que esas memorias principales sean eliminadas",
+            "categoria": 1
+        },
+        {
+            "titulo": "Up",
+            "pista1": "Carl Fredricksen, un niño tímido y serio que idolatra al famoso explorador Charles F. Muntz Jr, cuyas anécdotas suelen relatarse en unos informativos proyectados en las salas de cine de la época",
+            "pista2": "Carl conoce a una niña enérgica y algo excéntrica llamada Ellie, de la que se enamora",
+            "pista3": "Un viejo gruñón y un niño con muchos globos emprenden un largo viaje",
+            "categoria": 1
+        },
+        {
+            "titulo": "Tiana y el sapo",
+            "pista1": "Al inicio dos niñas pequeñas están escuchando la historía del príncipe rana",
+            "pista2": "La protagonista sueña con crear su propio restaurante",
+            "pista3": "Los protagonistas se llaman Naveen y Tiana",
+            "categoria": 1
+        },
+        {
+            "titulo": "Evasión en la granja",
+            "pista1": "Los protagonistas son Ginger y Rocky",
+            "pista2": "Ginger es una gallina intrépida, valiente y decidida que vive en una granja muy parecida a un campamento de prisioneros de la Segunda Guerra Mundial ",
+            "pista3": "Ginger y Rocky consiguen escapar de los señores Tweedy en avión",
+            "categoria": 1
+        },
+        {
+            "titulo": "Dumbo",
+            "pista1": "La película comienza cuando las cigüeñas traen varios animales bebés a los animales del circo",
+            "pista2": "Nuestro protagonista es alejado de su madre",
+            "pista3": "Gracias a sus grandes orejas el elefante consigue volar",
+            "categoria": 1
+        },
+        {
+            "titulo": "Harry Potter y el prisionero de Azkaban",
+            "pista1": "Forma parte de una saga de películas",
+            "pista2": "Nuestro protagonista conoce a su padrino en esta película",
+            "pista3": "Sirius fue condenado por la muerte de varios muggles",
+            "categoria": 1
+        },
+        {
+            "titulo": "Star wars: El despertar de la fuerza",
+            "pista1": "Séptima película de una famosa saga",
+            "pista2": "Treinta años después de la Batalla de Endor, la Galaxia no ha podido acabar con la tiranía y la opresión.",
+            "pista3": "Sólo Rey puede hacerle sombra a Kylo Ren",
+            "categoria": 1
+        },
+        {
+            "titulo": "Shrek",
+            "pista1": "Nuestro protagonista conoce a una princesa muy peculiar",
+            "pista2": "Cuando Burro trata de distraer a la dragona, esta se enamora de él",
+            "pista3": "El protagonista es un ogro verde que tiene su cabaña en un pantano",
+            "categoria": 1
+        }
     ]
-    }
+}
