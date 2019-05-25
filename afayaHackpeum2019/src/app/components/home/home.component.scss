@@ -1,0 +1,35 @@
+@import "../../../styles/variables";
+@import "../../../styles/backgrounds";
+.gameDescription{
+    color:$color-hover;
+    animation-name: moveStarWars;
+    animation-duration:3s;
+    text-align:center;
+}
+
+@keyframes moveStarWars{
+    0%{
+        opacity:0;
+        transform: translateY(100px);
+        font-size:2em;
+        text-align:center;
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+        font-size:1em;
+        text-align:center;
+    }
+}
+
+.homeImage{
+    width:70%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    margin-left:15%;
+}
+
+
+h1{
+    text-align:center;
+    text-transform: uppercase;
+}
