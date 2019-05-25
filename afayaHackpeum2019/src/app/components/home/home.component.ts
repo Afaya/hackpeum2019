@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   title = 'Películas Películas';
-  gameDescription = 'Tu categoría seleccionar, para jugar poder';
+  gameDescription1 = 'Tu categoría seleccionar';
+  gameDescription2 = 'para jugar poder';
   easyButtonTitle = 'Padawan';
   hardButtonTitle = 'Jedi';
 
