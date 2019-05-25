@@ -320,8 +320,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="78"
-                            class="link-to-prism">src/app/components/game/game.component.ts:78</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/components/game/game.component.ts:82</a></div>
                 </td>
             </tr>
 
@@ -398,8 +398,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="98"
-                            class="link-to-prism">src/app/components/game/game.component.ts:98</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/components/game/game.component.ts:102</a></div>
                 </td>
             </tr>
 
@@ -1082,6 +1082,10 @@ export class GameComponent implements OnInit {
       this.cueList &#x3D; Array&lt;string&gt;();
       this.selectFilm();
       this.cueShowing();
+    } else {
+      if ((this.actualFilmIndex + 1) &gt; this.filmList.length) {
+        this.router.navigate([&#x27;/results/&#x27; + this.actualTotalPoints]);
+      }
     }
   }
 

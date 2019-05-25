@@ -136,7 +136,10 @@
                                 <a href="#puntuation">puntuation</a>
                             </li>
                             <li>
-                                <a href="#puntuationtext">puntuationtext</a>
+                                <a href="#puntuationText">puntuationText</a>
+                            </li>
+                            <li>
+                                <a href="#recommendationText">recommendationText</a>
                             </li>
                         </ul>
                     </td>
@@ -179,7 +182,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/results/results.component.ts:12</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/results/results.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -260,8 +263,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="20"
-                            class="link-to-prism">src/app/components/results/results.component.ts:20</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/components/results/results.component.ts:27</a></div>
                 </td>
             </tr>
 
@@ -299,8 +302,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="16"
-                            class="link-to-prism">src/app/components/results/results.component.ts:16</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="17"
+                            class="link-to-prism">src/app/components/results/results.component.ts:17</a></div>
                 </td>
             </tr>
 
@@ -384,11 +387,11 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="puntuationtext"></a>
+                        <a name="puntuationText"></a>
                         <span class="name">
                             <b>
-                            puntuationtext</b>
-                            <a href="#puntuationtext"><span class="icon ion-ios-link"></span></a>
+                            puntuationText</b>
+                            <a href="#puntuationText"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
@@ -401,6 +404,33 @@
                         <tr>
                             <td class="col-md-4">
                                     <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/components/results/results.component.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="recommendationText"></a>
+                        <span class="name">
+                            <b>
+                            recommendationText</b>
+                            <a href="#recommendationText"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/components/results/results.component.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -424,12 +454,19 @@ import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
 export class ResultsComponent implements OnInit {
   puntuation &#x3D; +this.route.snapshot.paramMap.get(&#x27;puntuation&#x27;);
   exitButtonTitle &#x3D; &#x27;Exit&#x27;;
-  puntuationtext: string;
+  puntuationText: string;
+  recommendationText: string;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.puntuationtext &#x3D; &#x27;Tu puntuación final es de &#x27; + this.puntuation + &#x27; puntos.&#x27;;
+    if (this.puntuation &lt; 30) {
+      this.puntuationText &#x3D; &#x27;Sigues siendo un Padawan. Has obtenido &#x27; + this.puntuation + &#x27; puntos.&#x27;;
+      this.recommendationText &#x3D; &#x27;Te recomendamos que dejes de jugar con la espada láser y te dediques a concentrarte en la fuerza&#x27;;
+    } else {
+      this.puntuationText &#x3D; &#x27;Enhorabuena, eres todo un Jedi. Has obtenido &#x27; + this.puntuation + &#x27; puntos.&#x27;;
+      this.recommendationText &#x3D; &#x27;Que la fuerza te acompañe&#x27;;
+    }
   }
 
   goHome(): void {
@@ -446,7 +483,9 @@ export class ResultsComponent implements OnInit {
           {{exitButtonTitle}}
         &lt;/button&gt;
   &lt;/div&gt;
-  &lt;label&gt;{{puntuationtext}}&lt;/label&gt;
+  &lt;img src&#x3D;&quot;../../../assets/images/yoda.jpg&quot; class&#x3D;&quot;yodaImage&quot; alt&#x3D;&quot;imagen de Yoda pensando&quot;&gt;
+  &lt;h4 class&#x3D;&quot;resultText&quot;&gt;{{puntuationText}}&lt;/h4&gt;
+  &lt;h5 class&#x3D;&quot;resultText&quot;&gt;{{recommendationText}}&lt;/h5&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -454,7 +493,60 @@ export class ResultsComponent implements OnInit {
                 <p class="comment">
                     <code>./results.component.scss</code>
                 </p>
-                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../../styles/variables&quot;;
+@import &quot;../../../styles/backgrounds&quot;;
+:host{
+    height: 90%;
+    width: 90%;
+}
+
+.exitButton{
+        background-color: transparent;
+        border: 1px solid #c8c1c8;
+        border-radius:20%;
+        color: $color-primary-header;
+        font-weight: bold;
+        font-size: 1.2em;
+        width:4em;
+        min-height:2em;
+        margin-bottom:5%;
+}
+    
+.exitButton:hover{
+        color:$color-hover;
+}
+
+.yodaImage{
+    width:70%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    margin-left:15%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.resultText{
+    color:$color-hover;
+    animation-name: moveStarWars;
+    animation-duration:2s;
+    text-align:center;
+}
+
+@keyframes moveStarWars{
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+        font-size:2em;
+        text-align:center;
+    }
+    100%{
+        opacity:1;
+        transform: translate(0);
+        font-size:1em;
+        text-align:center;
+    }
+}
+
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-tree">
@@ -482,7 +574,7 @@ export class ResultsComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="resultsContainer">    <div class="gameHeaderContainer">        <button class="exitButton" (click)="goHome()">          {{exitButtonTitle}}        </button>  </div>  <label>{{puntuationtext}}</label></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="resultsContainer">    <div class="gameHeaderContainer">        <button class="exitButton" (click)="goHome()">          {{exitButtonTitle}}        </button>  </div>  <img src="../../../assets/images/yoda.jpg" class="yodaImage" alt="imagen de Yoda pensando">  <h4 class="resultText">{{puntuationText}}</h4>  <h5 class="resultText">{{recommendationText}}</h5></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'GameComponent', 'selector': 'app-game'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ResultsComponent', 'selector': 'app-results'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ResultsComponent'};
