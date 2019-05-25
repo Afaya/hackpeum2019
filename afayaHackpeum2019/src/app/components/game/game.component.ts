@@ -22,7 +22,7 @@ export class GameComponent implements OnInit {
   sendButtonTitle = 'Enviar';
   nextCueButtonTitle = 'Siguiente pista';
   nextFilmButtonTitle = 'Siguiente película';
-  filmAnswer: string;
+  filmAnswer = '';
 
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 

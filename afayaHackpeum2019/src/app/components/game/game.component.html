@@ -14,15 +14,15 @@
   </div>
   <div class="gameOptionsContainer">
     <input class="filmInput" placeholder="{{answerPlaceHolder}}" [value]="filmAnswer" (change)="filmAnswer = $event.target.value">
-    <button class="sendAnswerButton homeButton" (click)="checkAnswer()">
+    <button class="sendAnswerButton gameButton" (click)="checkAnswer()">
       {{sendButtonTitle}}
     </button>
   </div>
   <div class="gameOptionsContainer">
-    <button class="nextCueButton homeButton" (click)="cueShowing()" [disabled]="actualCueNumber > 3">
+    <button class="nextCueButton gameButton" (click)="cueShowing()" [disabled]="actualCueNumber > 3">
       {{nextCueButtonTitle}}
     </button>
-    <button class="nextFilmButton homeButton"  (click)="nextFilm()" [disabled]="actualCueNumber < 4">
+    <button class="nextFilmButton gameButton"  (click)="nextFilm()" [disabled]="actualCueNumber < 4">
       {{nextFilmButtonTitle}}
     </button>
   </div>

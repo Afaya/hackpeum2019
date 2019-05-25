@@ -13,13 +13,53 @@
     padding-left:5%;
     padding-right:5%;
     margin-bottom:2%;
+    align-items: center;
 }
+.gameButton{
+    background-color: $color-primary-white;
+    border: 1px;
+    border-style: solid;
+    border-radius: $border-radius-size;
+    border-color: $color-secondary-white;
+    text-align: center;
+    text-decoration: none;
+    color: $color-dark;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.2em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+    width: 5em;
+    padding: 0.2em;
+    min-height:3em;
+}
+.gameButton:hover{
+    background: $color-hover;
+    text-decoration: none;
+    text-align: center;
+    color: $color-dark;
+    text-decoration: none;
+}
+
+.gameButton:disabled{
+    background-color:$color-primary-header;
+    border-color: $color-primary-header;
+    color:$color-primary-white;
+}
+
 .exitButton{
     background-color: transparent;
-    border: none;
+    border: 1px solid #c8c1c8;
+    border-radius:20%;
     color: $color-primary-header;
     font-weight: bold;
     font-size: 1.2em;
+    width:4em;
+    min-height:2em;
+}
+
+.exitButton:hover{
+    color:$color-hover;
 }
 
 .pointsNumber{
@@ -31,22 +71,25 @@
 }
 
 .gameCuesList{
-    min-height: 15em;
+    min-height: 16em;
     padding-top: 5%;
     color: $color-primary;
     font-size: 1em;
     font-weight: bold;
+    list-style:none;
 }
 
 .gameCuesList li{
     padding-right: 5%;
     margin-bottom: 2%;
+    font-size: 1.2em;
 }
 
 .filmInput{
     width: 70%;
     height: 2rem;
     margin-right: 2%;
+    font-size:1em;
 }
 
 .nextCueButton{
@@ -61,3 +104,9 @@
 .nextCueButton{
     margin-right:20%;
 }
+
+:host { 
+    width:90%;
+    margin:auto; 
+}
+
