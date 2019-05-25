@@ -24,7 +24,7 @@ export class GameComponent implements OnInit {
   nextFilmButtonTitle = 'Siguiente película';
   filmAnswer = '';
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private dataService: DataService) { }
 
   ngOnInit(): void {
     this.loadFilmData();
@@ -64,6 +64,8 @@ export class GameComponent implements OnInit {
   }
 
   nextFilm(): void {
+    this.filmAnswer = '';
+    this.answerPlaceHolder = 'Introducir titulo de la pelicula';
     this.pointsNumber = 10;
     this.actualCueNumber = 1;
     this.cueList = Array<string>();
@@ -75,9 +77,11 @@ export class GameComponent implements OnInit {
     if (typeof (this.filmAnswer) !== 'undefined' && this.filmAnswer !== ''
       && this.filmAnswer.toLowerCase() === this.actualFilm.titulo.toLowerCase()) {
       this.actualTotalPoints += this.pointsNumber;
-      this.nextFilm();
+      if (this.actualFilmIndex < this.filmList.length) {
+        this.nextFilm();
+      }
     } else {
-      if (this.actualCueNumber > 3) {
+      if (this.actualCueNumber > 3 && this.actualFilmIndex < this.filmList.length) {
         this.nextFilm();
       } else {
         this.filmAnswer = '';
@@ -85,5 +89,13 @@ export class GameComponent implements OnInit {
         this.cueShowing();
       }
     }
+
+    if ((this.actualFilmIndex + 1) > this.filmList.length) {
+      this.router.navigate(['/results/' + this.actualTotalPoints]);
+    }
+  }
+
+  goHome(): void {
+    this.router.navigate(['/home']);
   }
 }
