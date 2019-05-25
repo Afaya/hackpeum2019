@@ -12,15 +12,17 @@ export class GameComponent implements OnInit {
   answerPlaceHolder = 'Introducir titulo de la pelicula';
   pointsNumber = 10;
   exitButtonTitle = 'Exit';
-  sendButtonTitle = 'Send Answer';
-  nextCueButtonTitle = 'Next Cue';
-  nextFilmButtonTitle = 'Next Film';
+  sendButtonTitle = 'Enviar';
+  nextCueButtonTitle = 'Siguiente pista';
+  nextFilmButtonTitle = 'Siguiente película';
   filmAnswer: string;
 
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
-    this.cueList.push('Pista de ejemplo');
+    this.cueList.push('El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión, antes de juzgar a la Humanidad por sus pecados.');
+    this.cueList.push('El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión, antes de juzgar a la Humanidad por sus pecados.');
+    this.cueList.push('El juicio final está cada vez más cerca. Jesucristo ha vuelto al mundo para llevar a cabo una última misión, antes de juzgar a la Humanidad por sus pecados.');
   }
 
 }
