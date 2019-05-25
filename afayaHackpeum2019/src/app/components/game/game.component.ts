@@ -72,6 +72,10 @@ export class GameComponent implements OnInit {
       this.cueList = Array<string>();
       this.selectFilm();
       this.cueShowing();
+    } else {
+      if ((this.actualFilmIndex + 1) > this.filmList.length) {
+        this.router.navigate(['/results/' + this.actualTotalPoints]);
+      }
     }
   }
 
