@@ -3,26 +3,26 @@
     <button class="exitButton">
       {{exitButtonTitle}}
     </button>
-    <input readonly [value]="pointsNumber">
+    <span class="pointsNumber">{{pointsNumber}} puntos</span>
   </div>
   <div class="gameCuesContainer">
-    <ul>
+    <ul class="gameCuesList">
       <li *ngFor="let cue of cueList; let i = index">
         {{i + 1}} - {{cue}}
       </li>
     </ul>
   </div>
   <div class="gameOptionsContainer">
-    <input placeholder="{{answerPlaceHolder}}" [value]="filmAnswer" (change)="filmAnswer = $event.target.value">
-    <button class="sendAnswerButton" (click)="checkAnswer()">
+    <input class="filmInput" placeholder="{{answerPlaceHolder}}" [value]="filmAnswer" (change)="filmAnswer = $event.target.value">
+    <button class="sendAnswerButton homeButton" (click)="checkAnswer()">
       {{sendButtonTitle}}
     </button>
   </div>
   <div class="gameOptionsContainer">
-    <button class="nextCueButton" (click)="cueShowing()" [disabled]="actualCueNumber > 3">
+    <button class="nextCueButton homeButton" (click)="cueShowing()" [disabled]="actualCueNumber > 3">
       {{nextCueButtonTitle}}
     </button>
-    <button class="nextFilmButton" (click)="nextFilm()" [disabled]="actualCueNumber < 4">
+    <button class="nextFilmButton homeButton"  (click)="nextFilm()" [disabled]="actualCueNumber < 4">
       {{nextFilmButtonTitle}}
     </button>
   </div>

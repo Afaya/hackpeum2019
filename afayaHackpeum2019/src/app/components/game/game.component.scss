@@ -1,0 +1,63 @@
+@import "../../../styles/variables";
+@import "../../../styles/backgrounds";
+.gameHeaderContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:5%;
+    padding-right:5%;
+}
+.gameOptionsContainer{
+    display: flex;
+    flex-direction: row;
+    padding-left:5%;
+    padding-right:5%;
+    margin-bottom:2%;
+}
+.exitButton{
+    background-color: transparent;
+    border: none;
+    color: $color-primary-header;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.pointsNumber{
+    color:$color-hover;
+    font-weight:bold;
+    font-size:1em;
+    padding:2%;
+    width:4.5em;
+}
+
+.gameCuesList{
+    min-height: 15em;
+    padding-top: 5%;
+    color: $color-primary;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.gameCuesList li{
+    padding-right: 5%;
+    margin-bottom: 2%;
+}
+
+.filmInput{
+    width: 70%;
+    height: 2rem;
+    margin-right: 2%;
+}
+
+.nextCueButton{
+    margin-left: 1%;
+    width: 40%;
+}
+
+.nextFilmButton{
+    width:40%;
+}
+
+.nextCueButton{
+    margin-right:20%;
+}

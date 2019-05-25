@@ -19,10 +19,10 @@ export class GameComponent implements OnInit {
   answerPlaceHolder = 'Introducir titulo de la pelicula';
   pointsNumber = 10;
   exitButtonTitle = 'Exit';
-  sendButtonTitle = 'Send Answer';
-  nextCueButtonTitle = 'Next Cue';
-  nextFilmButtonTitle = 'Next Film';
-  filmAnswer = '';
+  sendButtonTitle = 'Enviar';
+  nextCueButtonTitle = 'Siguiente pista';
+  nextFilmButtonTitle = 'Siguiente película';
+  filmAnswer: string;
 
   constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
