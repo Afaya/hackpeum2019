@@ -1,3 +1,29 @@
-<p>
-  game works!
-</p>
+<div class="gameContainer">
+  <div class="gameHeaderContainer">
+    <button class="exitButton">
+      {{exitButtonTitle}}
+    </button>
+    <input readonly [(value)]="pointsNumber">
+  </div>
+  <div class="gameCuesContainer">
+    <ul>
+      <li *ngFor="let cue of cueList; let i = index">
+        {{i + 1}} - {{cue}}
+      </li>
+    </ul>
+  </div>
+  <div class="gameOptionsContainer">
+    <input placeholder="{{answerPlaceHolder}}" (value)="filmAnswer">
+    <button class="sendAnswerButton">
+      {{sendButtonTitle}}
+    </button>
+  </div>
+  <div class="gameOptionsContainer">
+    <button class="nextCueButton">
+      {{nextCueButtonTitle}}
+    </button>
+    <button class="nextFilmButton">
+      {{nextFilmButtonTitle}}
+    </button>
+  </div>
+</div>

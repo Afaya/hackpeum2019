@@ -12,7 +12,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'game',
+    path: 'game/:level',
     component: GameComponent,
     data: {
     }

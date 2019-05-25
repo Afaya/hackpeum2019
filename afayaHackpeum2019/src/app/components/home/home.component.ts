@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,10 +11,19 @@ export class HomeComponent implements OnInit {
   gameDescription = 'Juego para adivinar peliculas mediantes diferentes pistas (máximo de tres), elige una categoría.';
   easyButtonTitle = 'Padawan';
   hardButtonTitle = 'Jedi';
+  padawanLevel = 1;
+  jediLevel = 2;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
+  goPadawanGame(): void {
+    this.router.navigate(['/game/' + this.padawanLevel]);
+  }
+
+  goJediGame(): void {
+    this.router.navigate(['/game/' + this.padawanLevel]);
+  }
 }
