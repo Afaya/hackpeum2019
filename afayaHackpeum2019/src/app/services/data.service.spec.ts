@@ -9,4 +9,10 @@ describe('DataService', () => {
     const service: DataService = TestBed.get(DataService);
     expect(service).toBeTruthy();
   });
+
+  it('data should be returned', () => {
+    const service: DataService = TestBed.get(DataService);
+    const dataFromJson = service.getDataFilmFromJSON();
+    expect(dataFromJson.length).toBeGreaterThan(0);
+  });
 });
