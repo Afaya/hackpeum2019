@@ -25,6 +25,6 @@ export class HomeComponent implements OnInit {
   }
 
   goJediGame(): void {
-    this.router.navigate(['/game/' + this.padawanLevel]);
+    this.router.navigate(['/game/' + this.jediLevel]);
   }
 }
