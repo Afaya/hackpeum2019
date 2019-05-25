@@ -18,7 +18,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'results',
+    path: 'results/:puntuation',
     component: ResultsComponent,
     data: {
     }
