@@ -1,0 +1,24 @@
+@import "../styles/variables";
+@import "../styles/backgrounds";
+
+.menuButtons{
+    background-color: $color-background-transparent;
+    border: 1px;
+    border-style: solid;
+    border-radius: $border-radius-size;
+    border-color: $color-secondary-white;
+    text-align: center;
+    text-decoration: none;
+    color: $color-primary-white;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.2em;
+    cursor: pointer;
+  }
+  
+.menuButtons:hover{
+      background: $color-secondary-white;
+      text-decoration: none;
+      text-align: center;
+      color: $color-dark;
+      text-decoration: none;
+}

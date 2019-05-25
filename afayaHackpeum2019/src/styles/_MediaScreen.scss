@@ -1,0 +1,114 @@
+@import "../styles/variables";
+
+body{
+    font-size: 1em;
+}  
+
+// cabecera
+header {
+    height: 10vh;
+}
+
+header button {
+    font-size: 1em;
+}
+
+.principalContainer {
+    height: 75vh;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+.title {
+    font-size: 1em;
+}
+
+.subtitle {
+    font-size: 1em;
+}
+
+
+/* Adaptación tamaño letra según pantalla */
+@media screen and (max-width: 2100px) {
+    
+    html {
+        font-size: 16pt;
+    }
+
+    body{
+    }  
+}
+
+@media screen and (max-width: 1700px) {
+    
+    html {
+        font-size: 16pt;
+    }
+
+    body{
+    } 
+}
+
+@media screen and  (max-width: 1100px) {
+    html {
+        font-size: 16pt;
+   }
+
+   body{
+   } 
+}
+
+@media screen and (max-width: 980px) {
+    html {
+        font-size: 16pt;
+   }
+
+   body{
+   } 
+
+    header {
+        height: 6vh;
+    }
+
+    header button {
+        font-size: 1em;
+    }
+
+    .principalContainer {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    body{
+    } 
+    
+    html {
+        font-size: 13pt;
+    }
+
+    header {
+        height: 6vh;
+    }
+
+    .principalContainer {
+        height: 80vh;
+    }
+}
+ 
+@media screen and (max-width: 600px) {
+    html {
+         font-size: 11pt;
+    }
+
+    header {
+        height: 6vh;
+    }
+
+    .principalContainer {
+        height: 80vh;
+    }
+}

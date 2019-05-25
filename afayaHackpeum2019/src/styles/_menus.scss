@@ -1,0 +1,29 @@
+@import "../styles/variables";
+@import "../styles/buttons";
+
+.principalMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+}
+
+.mobileMenu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 60vw;
+    height: 20vh;
+    background-image: linear-gradient(to bottom, #4c4a4d, #6d6d6d, #7d7d7e);
+    z-index: 500;
+    border-radius: $border-radius-size;
+    border: solid 1px $color-secondary-white;
+    margin-left: 0.5em;
+}
+
+.mobileMenu a {
+    width: 90%;
+}
