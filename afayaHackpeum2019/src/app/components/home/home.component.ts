@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  title = 'Peliculas Peliculas';
-  gameDescription = 'Juego para adivinar peliculas mediantes diferentes pistas (máximo de tres), elige una categoría.';
+  title = 'Películas Películas';
+  gameDescription = 'Tu categoría seleccionar, para jugar poder';
   easyButtonTitle = 'Padawan';
   hardButtonTitle = 'Jedi';
 
