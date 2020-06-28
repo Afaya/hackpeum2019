@@ -7,8 +7,6 @@ Está realizado en Angular 6, hemos tratado que sea responsive, tiene documentac
 
 La presentación la podéis encontrar aquí: https://wideo.co/view/26236861558806733569?utm_source=CopyPaste&utm_medium=share&utm_campaign=sharebox&html5=true;
 
-Y la apli se puede ver aquí:https://afayapeliculas.000webhostapp.com/#/home.
-
 Y por último:
 Hackathon con haiku
 Haikus he escrito mil
